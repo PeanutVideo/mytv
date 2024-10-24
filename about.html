@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App Technical Support Page">
+    <title>App Support |应用技术支持</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .faq-section {
+            margin-bottom: 30px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .lang-toggle button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            const englishContent = document.getElementById('english');
+            const chineseContent = document.getElementById('chinese');
+            if (lang === 'en') {
+                englishContent.style.display = 'block';
+                chineseContent.style.display = 'none';
+            } else {
+                englishContent.style.display = 'none';
+                chineseContent.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>App Support | 应用技术支持</h1>
+    <div class="lang-toggle">
+        <button onclick="toggleLanguage('en')">English</button> |
+        <button onclick="toggleLanguage('zh')">中文</button>
+    </div>
+</header>
+
+<nav>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container" id="english" style="display: block;">
+    <section class="faq-section">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <h3>1. How do I use the app?</h3>
+        <p>You can get started by downloading the app from the Google Play and following the instructions on the home screen.</p>
+
+        <h3>2. What should I do if the app crashes?</h3>
+        <p>If the app crashes, try restarting it. If the issue persists, please contact our support team using the details below.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:king66728899@gmail.com">king66728899@gmail.com</a></p>
+    </section>
+</div>
+
+<div class="container" id="chinese" style="display: none;">
+    <section class="faq-section">
+        <h2>常见问题 (FAQ)</h2>
+        <h3>1. 我该如何使用该应用？</h3>
+        <p>您可以从谷歌商店下载该应用，并按照主屏幕上的说明进行操作。</p>
+
+        <h3>2. 如果应用程序崩溃，我该怎么办？</h3>
+        <p>如果应用崩溃，请尝试重新启动。如果问题仍然存在，请通过以下联系方式联系我们的支持团队。</p>
+    </section>
+
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>邮箱: <a href="mailto:king66728899@gmail.com">king66728899@gmail.com</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 mt studio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
